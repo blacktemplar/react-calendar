@@ -304,8 +304,6 @@ var Calendar = function (_Component) {
 
       if (allowedViewChanged || datesAreDifferent.apply(undefined, _toConsumableArray([nextValue, value].map(this.getValueFrom))) || datesAreDifferent.apply(undefined, _toConsumableArray([nextValue, value].map(this.getValueTo)))) {
         this.updateValues(nextProps);
-      } else {
-        nextState.activeStartDate = this.getActiveStartDate(nextProps);
       }
 
       if (!nextProps.selectRange && this.props.selectRange) {
